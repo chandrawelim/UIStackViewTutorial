@@ -10,19 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var redView: UIView!
+    @IBOutlet weak var greenView: UIView!
+    @IBOutlet weak var blueView: UIView!
+    @IBOutlet weak var greenViewHeight: NSLayoutConstraint!
     
-    @IBOutlet weak var viewOne: UIView!
-    @IBOutlet weak var viewTwo: UIView!
-    @IBOutlet weak var viewThree: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         
-//        viewOne.isHidden = true
-        stackView.arrangedSubviews[2].isHidden = true
+//        greenView.isHidden = true
+        greenViewHeight.constant = 0
+        
     }
 
 }
